@@ -144,6 +144,13 @@ footer {
     }
 }
 
+/* Reset css cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: #0d3b66;
     width: 100%;
@@ -152,12 +159,13 @@ nav {
 ul.menu {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
 }
 
+
 ul.menu > li {
-    position: relative; 
+    position: relative;
 }
 
 ul.menu a {
@@ -171,8 +179,9 @@ ul.menu a {
 }
 
 ul.menu > li:hover > a {
-    background-color: #002855; 
+    background-color: #002855;
 }
+
 
 ul.submenu {
     display: none;
@@ -181,7 +190,9 @@ ul.submenu {
     left: 0;
     background-color: #0d3b66; 
     list-style: none;
+    min-width: 180px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 }
 
 ul.menu li.has-submenu:hover ul.submenu {
